@@ -1,0 +1,116 @@
+/*.project_details{*/
+    /*display: flex;*/
+    /*flex-direction: row;*/
+    /*overflow-y:hidden;*/
+
+/*}*/
+/*.project_thumb{*/
+
+/*}*/
+/*.project_thumb img{*/
+    /*object-fit: cover;*/
+    /*width: 33vw;*/
+    /*height:100vh;*/
+/*}*/
+
+
+
+.sliderArea{
+    width: 100vw;
+    height:100vh;
+    display:block;
+    position: relative;
+}
+
+.main{
+    display:flex;
+    flex-direction:row;
+    height:100vh;
+    overflow-x:hidden;
+    overflow-y:hidden;
+}
+
+.image{
+    width: 33.3333vw;
+    height:auto;
+    position: relative;
+}
+.image img{
+    width:100%;
+    height: 100vh;
+    display: block;
+    object-fit:cover;
+}
+
+.imageText{
+    position: absolute;
+    left: 20px;
+    bottom:200px;
+}
+
+.imageText h1{
+    color: #f2742a;
+    font-size: 80px;
+    font-weight: 900;
+    line-height: 0;
+}
+.imageText h4{
+    color: #ffffff;
+
+}
+
+.imageText p{
+    color:#ffffff;
+    font-size:20px;
+    display: none;
+}
+
+.image>img:hover p{
+    display: block;
+}
+
+.rightArrow{
+    position: absolute;
+    right: 5vmin;
+    bottom:5vmin;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    width: 50px;
+    height:50px;
+}
+
+.rightArrow img{
+    top:25%;
+    left:25%;
+    position:relative;
+    width:25px;
+    height:25px;
+}
+
+.leftArrow{
+    position: absolute;
+    left: 5vmin;
+    bottom:5vmin;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    width: 50px;
+    height:50px;
+    z-index: 1;
+}
+
+.leftArrow img{
+    top:25%;
+    left:25%;
+    position:relative;
+    width:25px;
+    height:25px;
+    transform: rotate(180deg);
+}
+.leftArrow img:hover{
+    top:25%;
+    left:25%;
+    position:relative;
+    width:25px;
+    height:25px;
+    transform: rotate(180deg);
+}
