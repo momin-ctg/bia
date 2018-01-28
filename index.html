@@ -6,6 +6,7 @@
     <title></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/swiper.css">
 
     <link rel="manifest" href="site.webmanifest">
     <link rel="apple-touch-icon" href="icon.png">
@@ -15,64 +16,55 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-<!--[if lte IE 9]>
-<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade
-    your browser</a> to improve your experience and security.</p>
-<![endif]-->
 
-<!-- =================================
-                Main Area
-     ================================= -->
-<main class="main">
-    <div class="project_area">
-        <div class="project_details">
-            <a class="project_thumb" href="">
-                <div class="">
-                    <img src="img/one.jpg" alt="">
-                </div>
-            </a>
-            <a class="project_thumb" href="">
-                <div class="">
-                    <img src="img/two.jpg" alt="">
-                </div>
-            </a>
-            <a class="project_thumb" href="">
-                <div class="">
-                    <img src="img/three.jpg" alt="">
-                </div>
-            </a>
-            <a class="project_thumb" href="">
-                <div class="">
-                    <img src="img/four.jpg" alt="">
-                </div>
-            </a>
-            <a class="project_thumb" href="">
-                <div class="">
-                    <img src="img/five.jpg" alt="">
-                </div>
-            </a>
+
+<main class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide project_one">
+            <div class="project_details">
+                <h1>We Design <br/> For <br/> Impact</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <p>CoDesign</p>
+            </div>
         </div>
+        <div class="swiper-slide project_two"></div>
+        <div class="swiper-slide project_three"></div>
+        <div class="swiper-slide project_four"></div>
+        <div class="swiper-slide project_five"></div>
+        <div class="swiper-slide project_six"></div>
     </div>
+
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
 </main>
 
 
-<script src="js/vendor/modernizr-3.5.0.min.js"></script>
+
+
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"
         integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.0/js/swiper.js"></script>
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        grabCursor: true,
+        slidesPerView: 3,
+        slidesPerGroup: 3,
+        speed: 1000,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev'
+        },
+        mousewheel: {
+            invert: true
+        },
+
+
+    });
+</script>
 <script src="js/plugins.js"></script>
 <script src="js/main.js"></script>
-
-<!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-<script>
-    window.ga = function () {
-        ga.q.push(arguments)
-    };
-    ga.q = [];
-    ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto');
-    ga('send', 'pageview')
-</script>
 <script src="https://www.google-analytics.com/analytics.js" async defer></script>
 </body>
 </html>
